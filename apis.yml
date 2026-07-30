@@ -1,8 +1,25 @@
 aid: stitch-fix
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/stitch-fix.png
 name: Stitch Fix
-description: 'Stitch Fix is a company surfaced as a portfolio company of benchmark and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Stitch Fix is an online personal styling service that pairs data science and
+  machine learning with expert human stylists to send customers curated shipments ("Fixes") of
+  apparel, footwear, and accessories selected to their size, budget, and style preferences.
+  Founded in 2011 and publicly traded (NASDAQ: SFIX), the company operates a direct-to-consumer
+  retail model across womens, mens, and kids categories. Stitch Fix does not publish a public
+  developer API or developer portal; its engineering team shares its data-science and platform
+  work through the Multithreaded technology blog and open-source projects on GitHub. This profile
+  captures the company''s public web, security, and engineering surfaces.'
 url: https://raw.githubusercontent.com/api-evangelist/stitch-fix/refs/heads/main/apis.yml
 x-type: company
 x-source: benchmark-portfolio
@@ -10,10 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Retail
+- Ecommerce
+- Fashion
+- Apparel
+- Personalization
+- Styling
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/stitch-fix-domain-security.yml
 - type: Website
   url: https://www.stitchfix.com
+- type: Blog
+  name: Multithreaded Technology Blog
+  url: https://multithreaded.stitchfix.com
+- type: GitHubOrganization
+  name: Stitch Fix Technology
+  url: https://github.com/stitchfix
+- type: Support
+  name: Stitch Fix Support
+  url: https://support.stitchfix.com
+- type: PrivacyPolicy
+  url: https://www.stitchfix.com/privacy
+- type: TermsOfService
+  url: https://www.stitchfix.com/terms
+
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
